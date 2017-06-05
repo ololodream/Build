@@ -30,57 +30,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <provider android:name=".providers.Accelerometer_Provider"
-            android:authorities="io.github.cluo29.build.provider.accelerometer"
-            android:exported="true"
-            android:readPermission="io.github.cluo29.build.READ_CONTEXT_DATA"
-            android:writePermission="io.github.cluo29.build.WRITE_CONTEXT_DATA"/>
-
-
-        <provider android:name=".providers.Complete_Provider"
-            android:authorities="io.github.cluo29.build.provider.complete"
-            android:exported="true"
-            android:readPermission="io.github.cluo29.build.READ_CONTEXT_DATA"
-            android:writePermission="io.github.cluo29.build.WRITE_CONTEXT_DATA"/>
-
-        <provider android:name=".providers.Exercise_Provider"
-            android:authorities="io.github.cluo29.build.provider.exercise"
-            android:exported="true"
-            android:readPermission="io.github.cluo29.build.READ_CONTEXT_DATA"
-            android:writePermission="io.github.cluo29.build.WRITE_CONTEXT_DATA"/>
-
-        <provider android:name=".providers.Program_Provider"
-            android:authorities="io.github.cluo29.build.provider.program"
-            android:exported="true"
-            android:readPermission="io.github.cluo29.build.READ_CONTEXT_DATA"
-            android:writePermission="io.github.cluo29.build.WRITE_CONTEXT_DATA"/>
-
-        <provider android:name=".providers.Program_Routine_Provider"
-            android:authorities="io.github.cluo29.build.provider.programroutine"
-            android:exported="true"
-            android:readPermission="io.github.cluo29.build.READ_CONTEXT_DATA"
-            android:writePermission="io.github.cluo29.build.WRITE_CONTEXT_DATA"/>
-
-        <provider android:name=".providers.Routine_Exercise_Provider"
-            android:authorities="io.github.cluo29.build.provider.routineexercise"
-            android:exported="true"
-            android:readPermission="io.github.cluo29.build.READ_CONTEXT_DATA"
-            android:writePermission="io.github.cluo29.build.WRITE_CONTEXT_DATA"/>
-
-        <provider android:name=".providers.Routine_Provider"
-            android:authorities="io.github.cluo29.build.provider.routine"
-            android:exported="true"
-            android:readPermission="io.github.cluo29.build.READ_CONTEXT_DATA"
-            android:writePermission="io.github.cluo29.build.WRITE_CONTEXT_DATA"/>
-
-        <provider android:name=".providers.Gyroscope_Provider"
-            android:authorities="io.github.cluo29.build.provider.gyroscope"
-            android:exported="true"
-            android:readPermission="io.github.cluo29.build.READ_CONTEXT_DATA"
-            android:writePermission="io.github.cluo29.build.WRITE_CONTEXT_DATA"/>
-
-        <service android:name=".CountService" android:exported="true" />
-
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">
@@ -132,6 +81,57 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.miya_.myapplication.ViewRoutine" />
         </activity>
+        <provider android:name=".providers.Accelerometer_Provider"
+            android:authorities="io.github.cluo29.build.provider.accelerometer"
+            android:exported="true"
+            android:readPermission="io.github.cluo29.build.READ_CONTEXT_DATA"
+            android:writePermission="io.github.cluo29.build.WRITE_CONTEXT_DATA"/>
+
+
+        <provider android:name=".providers.Complete_Provider"
+            android:authorities="io.github.cluo29.build.provider.complete"
+            android:exported="true"
+            android:readPermission="io.github.cluo29.build.READ_CONTEXT_DATA"
+            android:writePermission="io.github.cluo29.build.WRITE_CONTEXT_DATA"/>
+
+        <provider android:name=".providers.Exercise_Provider"
+            android:authorities="io.github.cluo29.build.provider.exercise"
+            android:exported="true"
+            android:readPermission="io.github.cluo29.build.READ_CONTEXT_DATA"
+            android:writePermission="io.github.cluo29.build.WRITE_CONTEXT_DATA"/>
+
+        <provider android:name=".providers.Program_Provider"
+            android:authorities="io.github.cluo29.build.provider.program"
+            android:exported="true"
+            android:readPermission="io.github.cluo29.build.READ_CONTEXT_DATA"
+            android:writePermission="io.github.cluo29.build.WRITE_CONTEXT_DATA"/>
+
+        <provider android:name=".providers.Program_Routine_Provider"
+            android:authorities="io.github.cluo29.build.provider.programroutine"
+            android:exported="true"
+            android:readPermission="io.github.cluo29.build.READ_CONTEXT_DATA"
+            android:writePermission="io.github.cluo29.build.WRITE_CONTEXT_DATA"/>
+
+        <provider android:name=".providers.Routine_Exercise_Provider"
+            android:authorities="io.github.cluo29.build.provider.routineexercise"
+            android:exported="true"
+            android:readPermission="io.github.cluo29.build.READ_CONTEXT_DATA"
+            android:writePermission="io.github.cluo29.build.WRITE_CONTEXT_DATA"/>
+
+        <provider android:name=".providers.Routine_Provider"
+            android:authorities="io.github.cluo29.build.provider.routine"
+            android:exported="true"
+            android:readPermission="io.github.cluo29.build.READ_CONTEXT_DATA"
+            android:writePermission="io.github.cluo29.build.WRITE_CONTEXT_DATA"/>
+
+        <provider android:name=".providers.Gyroscope_Provider"
+            android:authorities="io.github.cluo29.build.provider.gyroscope"
+            android:exported="true"
+            android:readPermission="io.github.cluo29.build.READ_CONTEXT_DATA"
+            android:writePermission="io.github.cluo29.build.WRITE_CONTEXT_DATA"/>
+
+        <service android:name=".CountService" android:exported="true" />
+
 
     </application>
 
