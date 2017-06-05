@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/colorGap">
+
+        <TextView
+            android:id="@+id/textViewRoutine1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Selected Program Name"
+            android:background="@mipmap/program1"
+            android:gravity="center"
+            android:textSize="22dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorGap" />
+
+        <TextView
+            android:id="@+id/textViewRoutine2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Selected Routine Name"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorGray"
+            android:layout_below="@+id/textViewRoutine1"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textViewRoutine3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:textColor="@color/colorGray"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Exercises "
+            android:layout_below="@+id/textViewRoutine2"
+            android:layout_alignParentStart="true" />
+
+        <ListView
+
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/viewroutine_container1"
+            android:layout_below="@+id/textViewRoutine3"
+            android:layout_marginBottom="54dp"
+            android:dividerHeight="2dp"
+            />
+
+        <Button
+            android:id="@+id/buttonViewRoutine1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorGreen"
+            android:textColor="@color/colorWhite"
+            android:text="Start Routine"
+
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+
+
+    </RelativeLayout>

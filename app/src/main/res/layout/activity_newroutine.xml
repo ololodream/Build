@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    >
+
+
+    <TextView
+
+        android:layout_marginTop="25dp"
+        android:id="@+id/textNewRoutine1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Create New Routine"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/editTextNewProgram1"
+       />
+
+    <TextView
+        android:id="@+id/textNewRoutine11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorGap"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Routine Name "
+        android:layout_below="@+id/textNewRoutine1"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+         />
+
+    <EditText
+        android:id="@+id/editTextNewRoutine1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/textNewRoutine11"
+        android:inputType="textPersonName"
+        android:text="Routine Name"
+
+        android:background="@drawable/shape_wihte_frame"
+        android:textColor="@color/colorLightGray" />
+    <TextView
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:id="@+id/textNewRoutine2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextNewRoutine1"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:textColor="@color/colorGap"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Time of Day" />
+
+
+    <TextView
+        android:id="@+id/textNewRoutine3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_alignStart="@+id/textNewRoutine2"
+        android:layout_below="@+id/textNewRoutine2"
+        android:textColor="@color/colorLightGray"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="@drawable/shape_wihte_frame"
+        android:text="hh:mm" />
+
+    <Button
+        android:id="@+id/buttonNewRoutine1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="8dp"
+        android:background="@mipmap/clock"
+        android:gravity="center"
+        android:layout_marginTop="4dp"
+        android:layout_alignTop="@+id/textNewRoutine3"
+        android:layout_alignEnd="@+id/textNewRoutine3" />
+
+    <TextView
+        android:id="@+id/textNewRoutine4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorGap"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Add Exercises"
+        android:layout_below="@+id/buttonNewRoutine1"
+        android:layout_alignStart="@+id/textNewRoutine3"
+        android:layout_marginTop="25dp" />
+
+
+    <ListView
+        android:id="@+id/listViewNewRoutine1"
+        android:dividerHeight="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignStart="@+id/textNewRoutine4"
+        android:layout_below="@+id/textNewRoutine4"
+        />
+
+
+
+    <Button
+        android:id="@+id/buttonNewRoutine3"
+        android:layout_width="match_parent"
+        android:background="@color/colorGreen"
+        android:textColor="@color/colorWhite"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Next" />
+
+</RelativeLayout>

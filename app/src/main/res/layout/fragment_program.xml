@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_program"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_marginTop="25dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="PROGRAM"
+        android:background="@color/colorGray"
+        android:id="@+id/textViewProgram0"
+        android:textColor="@color/colorWhite"
+        android:textAlignment="center"
+        android:padding="16dp" />
+
+    <LinearLayout
+        android:layout_below="@+id/textViewProgram0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+      >
+        <include layout="@layout/content_myprogram" />
+        <include layout="@layout/content_popular" />
+    </LinearLayout>
+
+</RelativeLayout>

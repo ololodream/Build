@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dip"
+    android:layout_weight="3"
+
+    >
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:src="@mipmap/lounge"/>
+    <TextView
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:textColor="@color/colorGray"
+        android:id="@+id/textView_itemRoutineExercise1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/image"
+        android:layout_alignParentTop="true"
+        android:text=""
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:textColor="@color/colorGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Exercise Text"
+        android:id="@+id/textView_itemRoutineExercise2"
+        android:layout_toLeftOf="@+id/textView_itemRoutineExercise1"
+        android:layout_toEndOf="@+id/textView_itemRoutineExercise1"
+        />
+
+    <TextView
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:textColor="@color/colorGray"
+        android:id="@+id/textView_itemRoutineExercise3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sets: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignStart="@+id/textView_itemRoutineExercise1"
+        android:layout_below="@+id/textView_itemRoutineExercise1"
+        />
+
+    <TextView
+        android:textColor="@color/colorGray"
+        android:id="@+id/textView_itemRoutineExercise4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Number"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_toEndOf="@+id/textView_itemRoutineExercise3"
+        android:layout_below="@+id/textView_itemRoutineExercise2"
+        />
+
+    <TextView
+        android:textColor="@color/colorGray"
+        android:id="@+id/textView_itemRoutineExercise5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rpts: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_toEndOf="@+id/textView_itemRoutineExercise4"
+        android:layout_below="@+id/textView_itemRoutineExercise2"
+        android:layout_marginLeft="18dp"
+        />
+
+    <TextView
+        android:textColor="@color/colorGray"
+        android:id="@+id/textView_itemRoutineExercise6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rpt Number"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_toEndOf="@+id/textView_itemRoutineExercise5"
+        android:layout_below="@+id/textView_itemRoutineExercise2"
+
+        />
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@mipmap/right_arrow"
+
+        android:layout_alignTop="@+id/textView_itemRoutineExercise6"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

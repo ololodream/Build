@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_weight="0.25"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:context=".ProgramFragment"
+    tools:showIn="@layout/fragment_program"
+    android:background="@color/colorGap">
+
+    <TextView
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="POPULAR PROGRAMS"
+        android:textSize="12dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/textViewProgram2"
+
+        android:padding="16dp" />
+    <TextView
+        android:id="@+id/textview_margin2"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@drawable/margin"
+        android:layout_below="@+id/textViewProgram2"/>
+
+    <ListView
+        android:background="@color/colorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/program_container2"
+        android:dividerHeight="2.0dp"
+        android:layout_below="@+id/textview_margin2"
+        android:layout_alignParentStart="true"
+         />
+</RelativeLayout>

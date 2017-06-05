@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    >
+
+    <TextView
+        android:id="@+id/textNewProgram1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Create New Program"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/textNewProgram1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/textNewProgram2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:textColor="@android:color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Program Name" />
+
+        <EditText
+            android:id="@+id/editTextNewProgram1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textNewProgram2"
+            android:layout_below="@+id/textNewProgram2"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Program Name"
+            android:textColor="@color/colorLightGray"
+            android:background="@drawable/shape_wihte_frame"
+           />
+
+        <TextView
+            android:id="@+id/textNewProgram3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:textColor="@android:color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Start Date"
+            android:layout_below="@+id/editTextNewProgram1"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textNewProgram4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textNewProgram3"
+            android:layout_below="@+id/textNewProgram3"
+            android:textColor="@color/colorLightGray"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/shape_wihte_frame"
+            android:text="dd/mm/yyyy" />
+
+        <Button
+            android:id="@+id/buttonNewProgram1"
+            android:background="@mipmap/calendar"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="8dp"
+            android:layout_alignTop="@+id/textNewProgram4"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/textNewProgram5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textNewProgram4"
+            android:layout_below="@+id/buttonNewProgram1"
+            android:layout_marginTop="19dp"
+
+            android:textColor="@android:color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="End Date" />
+
+        <TextView
+            android:id="@+id/textNewProgram6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorLightGray"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/shape_wihte_frame"
+            android:text="dd/mm/yyyy"
+            android:layout_below="@+id/textNewProgram5"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/buttonNewProgram2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@mipmap/calendar"
+            android:layout_marginRight="8dp"
+            android:layout_alignTop="@+id/textNewProgram6"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/textNewProgram7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textNewProgram6"
+            android:layout_below="@+id/textNewProgram6"
+            android:layout_marginTop="19dp"
+            android:textColor="@android:color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Days in Week" />
+
+        <CheckBox
+            android:id="@+id/checkBoxNewProgram1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textNewProgram7"
+            android:layout_below="@+id/textNewProgram7"
+            android:layout_marginTop="19dp"
+            android:textColor="@color/colorWhite"
+            android:text="Mon" />
+
+        <CheckBox
+            android:id="@+id/checkBoxNewProgram2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/checkBoxNewProgram1"
+            android:layout_toEndOf="@+id/checkBoxNewProgram1"
+            android:textColor="@color/colorWhite"
+
+            android:text="Tue" />
+
+        <CheckBox
+            android:id="@+id/checkBoxNewProgram3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/checkBoxNewProgram2"
+            android:layout_alignBottom="@+id/checkBoxNewProgram2"
+            android:layout_toEndOf="@+id/checkBoxNewProgram2"
+            android:textColor="@color/colorWhite"
+            android:text="Wed" />
+
+        <CheckBox
+            android:id="@+id/checkBoxNewProgram4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/checkBoxNewProgram3"
+            android:layout_toEndOf="@+id/checkBoxNewProgram3"
+            android:textColor="@color/colorWhite"
+            android:text="Thu" />
+
+        <CheckBox
+            android:id="@+id/checkBoxNewProgram5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkBoxNewProgram1"
+            android:layout_below="@+id/checkBoxNewProgram1"
+            android:textColor="@color/colorWhite"
+            android:text="Fri" />
+
+        <CheckBox
+            android:id="@+id/checkBoxNewProgram6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBoxNewProgram1"
+            android:layout_toEndOf="@+id/checkBoxNewProgram5"
+            android:textColor="@color/colorWhite"
+            android:text="Sat" />
+
+        <CheckBox
+            android:id="@+id/checkBoxNewProgram7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sun"
+            android:layout_alignBaseline="@+id/checkBoxNewProgram6"
+            android:layout_alignBottom="@+id/checkBoxNewProgram6"
+            android:textColor="@color/colorWhite"
+            android:layout_toEndOf="@+id/checkBoxNewProgram6" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonNewProgram3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGreen"
+        android:textColor="@color/colorWhite"
+        android:text="Next"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

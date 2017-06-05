@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_train"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:fitsSystemWindows="true"
+    >
+    <TextView
+        android:layout_marginTop="25dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:text="Build"
+        android:background="@color/colorGray"
+        android:id="@+id/textViewProgram0"
+        android:textColor="@color/colorGap"
+        android:textAlignment="center"
+        android:padding="16dp" />
+    <TextView
+
+        android:id="@+id/textTrain1"
+        android:layout_below="@id/textViewProgram0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorGray"
+        android:text="Total Training Time" />
+
+    <TextView
+        android:id="@+id/textTrain2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/textTrain1"
+        android:layout_centerHorizontal="true"
+        android:text="0"
+        android:textAllCaps="false"
+        android:textColor="@color/colorGreen"
+        android:textSize="@android:dimen/notification_large_icon_height"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textTrain3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textTrain2"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_toEndOf="@+id/textTrain2"
+        android:layout_marginLeft="12dp"
+        android:textColor="@color/colorGray"
+        android:text="mins" />
+
+    <TextView
+        android:id="@+id/textTrain4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTrain2"
+        android:layout_centerHorizontal="true"
+
+        android:textColor="@color/colorGray"
+
+        android:text="Building" />
+
+    <TextView
+        android:id="@+id/textTrain5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTrain4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:text="0"
+        android:textColor="@color/colorGreen"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textTrain6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textTrain5"
+        android:layout_toEndOf="@+id/textTrain2"
+        android:textColor="@color/colorGray"
+        android:layout_marginLeft="10dp"
+        android:text="Days" />
+
+    <TextView
+        android:id="@+id/textTrain7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textTrain4"
+        android:layout_toStartOf="@+id/textTrain1"
+        android:textColor="@color/colorGray"
+        android:text="Training" />
+
+    <TextView
+        android:id="@+id/textTrain8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textTrain5"
+        android:layout_alignStart="@+id/textTrain7"
+        android:layout_marginLeft="16dp"
+        android:text="0"
+        android:textColor="@color/colorGreen"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textTrain9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textTrain6"
+        android:layout_toEndOf="@+id/textTrain8"
+        android:textColor="@color/colorGray"
+        android:layout_marginLeft="10dp"
+        android:text="Times" />
+
+    <TextView
+        android:id="@+id/textTrain10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textTrain4"
+        android:layout_toEndOf="@+id/textTrain1"
+        android:textColor="@color/colorGray"
+        android:text="Weight Lifted" />
+
+    <TextView
+        android:id="@+id/textTrain11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textTrain10"
+        android:layout_alignBottom="@+id/textTrain6"
+        android:layout_marginTop="7dp"
+        android:text="0"
+        android:textColor="@color/colorGreen"
+        android:textSize="24sp"
+        android:layout_marginLeft="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textTrain6"
+        android:layout_toEndOf="@+id/textTrain11"
+        android:textColor="@color/colorGray"
+        android:layout_marginLeft="10dp"
+        android:text="kg" />
+    <TextView
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:id="@+id/textview_margin1"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@drawable/margin"
+        android:layout_below="@+id/textView24"/>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_below="@+id/textview_margin1"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+        <include layout="@layout/content_myprogram" />
+        <TextView
+
+            android:id="@+id/textview_margin2"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@drawable/margin"
+            android:layout_below="@+id/textView24"/>
+
+    </LinearLayout>
+</RelativeLayout>

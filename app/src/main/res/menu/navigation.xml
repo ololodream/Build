@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@mipmap/noun_50443_95989a"
+        android:title="@string/title_train" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@mipmap/noun_823202_95989a"
+        
+        android:title="@string/title_program" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@mipmap/noun_545037_95989a"
+        android:title="@string/title_me" />
+
+</menu>

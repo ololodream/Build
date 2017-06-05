@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorGray"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <TextView
+android:layout_marginTop="25dp"
+        android:textColor="@color/colorGap"
+        android:id="@+id/textCount1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Program Name"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+         />
+
+    <TextView
+        android:id="@+id/textCount2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="4dp"
+        android:text="Selected Routine Name"
+        android:textAlignment="center"
+        android:layout_below="@+id/textCount1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorLightGray" />
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:background="@drawable/shape_wihte_frame_round"
+        android:layout_below="@+id/textCount2"
+        android:layout_centerHorizontal="true">
+
+
+        <TextView
+            android:id="@+id/textCount3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="Exercise"
+            android:textAlignment="center"
+            android:layout_below="@+id/textCount2"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorGap" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/textCount4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="REP: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorGap" />
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textCount5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="0"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorGreen"
+            android:textSize="80sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textCount6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="SET: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorGap" />
+            <TextView
+                android:id="@+id/textCount7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorGap" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textCount8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="DUR: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorGap" />
+            <TextView
+                android:id="@+id/textCount9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="0s"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorGap" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textCount10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="0kg"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorGap"
+        android:textSize="36sp" />
+    <Button
+        android:background="@mipmap/weight"
+
+        android:id="@+id/buttonCount2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@+id/textCount10"
+        android:layout_toEndOf="@+id/textCount10" />
+
+    <Button
+        android:id="@+id/buttonCount3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGreen"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="52dp"
+        android:textColor="@color/colorWhite"
+
+        android:text="Start" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.miya_.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="io.github.cluo29.build.WRITE_CONTEXT_DATA" />
+    <uses-permission android:name="io.github.cluo29.build.READ_CONTEXT_DATA" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <permission
+        android:name="io.github.cluo29.build.READ_CONTEXT_DATA"
+        android:description="@string/app_name"
+        android:label="Read build Context data"
+        android:protectionLevel="normal" >
+    </permission>
+    <permission
+        android:name="io.github.cluo29.build.WRITE_CONTEXT_DATA"
+        android:description="@string/app_name"
+        android:label="Write build Context data"
+        android:protectionLevel="normal" >
+    </permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <provider android:name=".providers.Accelerometer_Provider"
+            android:authorities="io.github.cluo29.build.provider.accelerometer"
+            android:exported="true"
+            android:readPermission="io.github.cluo29.build.READ_CONTEXT_DATA"
+            android:writePermission="io.github.cluo29.build.WRITE_CONTEXT_DATA"/>
+
+
+        <provider android:name=".providers.Complete_Provider"
+            android:authorities="io.github.cluo29.build.provider.complete"
+            android:exported="true"
+            android:readPermission="io.github.cluo29.build.READ_CONTEXT_DATA"
+            android:writePermission="io.github.cluo29.build.WRITE_CONTEXT_DATA"/>
+
+        <provider android:name=".providers.Exercise_Provider"
+            android:authorities="io.github.cluo29.build.provider.exercise"
+            android:exported="true"
+            android:readPermission="io.github.cluo29.build.READ_CONTEXT_DATA"
+            android:writePermission="io.github.cluo29.build.WRITE_CONTEXT_DATA"/>
+
+        <provider android:name=".providers.Program_Provider"
+            android:authorities="io.github.cluo29.build.provider.program"
+            android:exported="true"
+            android:readPermission="io.github.cluo29.build.READ_CONTEXT_DATA"
+            android:writePermission="io.github.cluo29.build.WRITE_CONTEXT_DATA"/>
+
+        <provider android:name=".providers.Program_Routine_Provider"
+            android:authorities="io.github.cluo29.build.provider.programroutine"
+            android:exported="true"
+            android:readPermission="io.github.cluo29.build.READ_CONTEXT_DATA"
+            android:writePermission="io.github.cluo29.build.WRITE_CONTEXT_DATA"/>
+
+        <provider android:name=".providers.Routine_Exercise_Provider"
+            android:authorities="io.github.cluo29.build.provider.routineexercise"
+            android:exported="true"
+            android:readPermission="io.github.cluo29.build.READ_CONTEXT_DATA"
+            android:writePermission="io.github.cluo29.build.WRITE_CONTEXT_DATA"/>
+
+        <provider android:name=".providers.Routine_Provider"
+            android:authorities="io.github.cluo29.build.provider.routine"
+            android:exported="true"
+            android:readPermission="io.github.cluo29.build.READ_CONTEXT_DATA"
+            android:writePermission="io.github.cluo29.build.WRITE_CONTEXT_DATA"/>
+
+        <provider android:name=".providers.Gyroscope_Provider"
+            android:authorities="io.github.cluo29.build.provider.gyroscope"
+            android:exported="true"
+            android:readPermission="io.github.cluo29.build.READ_CONTEXT_DATA"
+            android:writePermission="io.github.cluo29.build.WRITE_CONTEXT_DATA"/>
+
+        <service android:name=".CountService" android:exported="true" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".CreateProgram">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.miya_.myapplication.MainActivity" />
+        </activity>
+
+        <activity android:name=".ViewProgram">
+            <meta-data
+                android:launchMode="singleTop"
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.miya_.myapplication.MainActivity" />
+        </activity>
+
+
+
+        <activity android:name=".CreateRoutine">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.miya_.myapplication.ViewProgram" />
+        </activity>
+
+        <activity android:name=".ViewRoutine">
+            <meta-data
+                android:launchMode="singleTop"
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.miya_.myapplication.ViewProgram" />
+        </activity>
+
+        <activity android:name=".ViewExercise">
+            <meta-data
+                android:launchMode="singleTop"
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.miya_.myapplication.ViewRoutine" />
+        </activity>
+
+        <activity android:name=".Count">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.miya_.myapplication.ViewRoutine" />
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray">
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        android:src="@mipmap/lounge"
+        android:id="@+id/imageViewExercise"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewExercise">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textviewActivityExercise1"
+            android:text="Excercise Name"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="@color/colorGap"
+
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            />
+        <TextView
+            android:id="@+id/textview_margin1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/margin"
+            android:layout_below="@+id/textviewActivityExercise1"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preperation"
+            android:id="@+id/textviewActivityExercise2"
+            android:textColor="@color/colorLightGray"
+            android:textSize="16dp"
+
+            android:layout_below="@id/textviewActivityExercise1"
+            android:layout_alignLeft="@id/textviewActivityExercise1"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preperation"
+            android:id="@+id/textviewActivityExercise3"
+            android:textColor="@color/colorGap"
+            android:textSize="16dp"
+            android:layout_alignLeft="@id/textviewActivityExercise1"
+            android:layout_below="@id/textviewActivityExercise2"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Execution"
+            android:id="@+id/textviewActivityExercise4"
+            android:textColor="@color/colorLightGray"
+            android:textSize="16dp"
+
+            android:layout_marginTop="14dp"
+            android:layout_below="@+id/textviewActivityExercise3"
+            android:layout_alignStart="@+id/textviewActivityExercise3" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Execution"
+            android:id="@+id/textviewActivityExercise5"
+            android:textColor="@color/colorGap"
+            android:textSize="16dp"
+
+            android:layout_below="@id/textviewActivityExercise4"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_alignLeft="@id/textviewActivityExercise1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comments"
+            android:id="@+id/textviewActivityExercise6"
+            android:textColor="@color/colorLightGray"
+            android:textSize="16dp"
+
+            android:layout_below="@id/textviewActivityExercise5"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_alignLeft="@id/textviewActivityExercise1"/>
+
+        <TextView
+            android:id="@+id/textviewActivityExercise7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/textviewActivityExercise1"
+            android:layout_below="@id/textviewActivityExercise6"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="Comments"
+            android:textColor="@color/colorGap"
+            android:textSize="16dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

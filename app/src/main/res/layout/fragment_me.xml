@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_me"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sensor Setting"
+        android:textSize="12dp"
+        android:textColor="@color/colorLightGray"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView" />
+
+
+
+    <ImageView
+        android:id="@+id/waist"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@mipmap/body_green"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentStart="true" />
+
+
+    <ImageView
+        android:layout_weight="1"
+        android:id="@+id/sensor1"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:clickable="true"
+
+        android:textColor="@color/colorWhite"
+        android:textAlignment="center"
+        android:background="@mipmap/sensor"
+        android:layout_marginBottom="16dp"
+        android:layout_above="@+id/text3"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorLightGray"
+        android:text="Drag Sensor on your body"
+        android:textAlignment="center"
+        android:textSize="14dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+
+
+</RelativeLayout>
