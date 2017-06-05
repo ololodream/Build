@@ -2,7 +2,7 @@
 Android Weight Lifting Application
 
 
-Download app-debug.apk file to  install it.
+Download build.apk file to  install it.
 
 See demo: https://www.youtube.com/watch?v=q3XRvwiMqy4
 
